@@ -1,0 +1,47 @@
+.navbar{
+    background-color: rgb(0, 59, 111);
+    height: 270px;    
+}
+
+.divimglogo{
+    margin-top: 10px;
+}
+
+.divcarousel{
+    margin-top: -60px;
+}
+
+.imgcarousel{
+    border-radius: 10px;
+    width: auto;
+    height: 13vw;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    width: auto !important;
+    height: 200px !important;
+  }
+
+.titulo{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.imglogo{
+    padding: 20px;
+    width: 240px;
+    height: 240px;
+}
+.page-footer{
+    background-color: rgb(0, 59, 111);
+}
