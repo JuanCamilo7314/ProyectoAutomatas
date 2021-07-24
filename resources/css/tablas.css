@@ -1,0 +1,12 @@
+blockquote {
+    border-left: rgb(0, 59, 111)  3px solid;
+}
+
+table {
+    background-color: #5A7592;
+}
+
+.containertable{
+    margin: auto;
+    width: 95%;
+}
