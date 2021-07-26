@@ -3,10 +3,62 @@ blockquote {
 }
 
 table {
-    background-color: #5A7592;
+    background-color:#aab0fc;
 }
 
 .containertable{
     margin: auto;
-    width: 95%;
+    width: 90%;
+}
+
+.navbar{
+    background-color: rgb(0, 59, 111);
+    height: 150px;    
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.divimglogo{
+    margin-top: 4px;
+}
+
+.titulo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.containerbusqueda{
+    margin-top: 42px;
+}
+
+.divbusqueda{
+    width: 600px;
+    height: 70px;
+    padding-left: 200px;
+}
+.input-field{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    background-color: white;
+}
+.validate{
+    border-bottom: none;
+}
+.input-field .prefix.active {
+    color: #000;
+}
+
+.input-field input:focus + label {
+    display: none;
+}
+
+.imglogo{
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+}
+.page-footer{
+    box-shadow: 0px -1px 4px rgba(0,0,0,1);
+    background-color: rgb(0, 59, 111);
 }
