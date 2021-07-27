@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+#cargas{
+    background-color: blue;
+}
+
 .busqueda{
     width: 450px;
     margin: auto;

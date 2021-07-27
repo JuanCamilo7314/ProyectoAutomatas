@@ -33,31 +33,30 @@ table {
 }
 
 .divbusqueda{
-    width: 600px;
-    height: 70px;
     padding-left: 200px;
 }
-.input-field{
-    border-radius: 25px;
-    border: 2px solid #000000;
+.input-field
+{
+    border: 3px solid black;
+    height: 50px;
+    border-radius: 10px;
     background-color: white;
-}
-.validate{
-    border-bottom: none;
+    
 }
 .input-field .prefix.active {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
-.input-field input:focus + label {
+.input-field .labelbusqueda{
     display: none;
 }
-
+  
 .imglogo{
     padding: 20px;
     width: 140px;
     height: 140px;
 }
+
 .page-footer{
     box-shadow: 0px -1px 4px rgba(0,0,0,1);
     background-color: rgb(0, 59, 111);

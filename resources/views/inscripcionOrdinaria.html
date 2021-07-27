@@ -1,200 +1,205 @@
-
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="../css/tablas.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/tablas.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div class="row navbar">
-        <div class="divimglogo col m1">
-            <img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt="">
+  <div class="row navbar">
+    <div class="divimglogo col m1">
+      <img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt="">
+    </div>
+    <div class="divtitulo col m5">
+      <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
+    </div>
+    <div class="containerbusqueda col m6">
+      <div class="row divbusqueda">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">search</i>
+          <input class="input-busqueda" id="busqueda" type="search">
+          <label class="labelbusqueda" for="busqueda">Busqueda</label>
         </div>
-        <div class="divtitulo col m5">
-            <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
-        </div>
-        <div class="containerbusqueda col m6">
-          <div class="row divbusqueda">
-              <div class="input-field col s12">
-                  <i class="material-icons prefix">search</i>
-                  <input class="validate" id="busqueda" type="search">
-                  <label class="labelbusqueda active" for="busqueda">Busqueda</label>
-              </div>
-          </div>
-          <br>
-          <br>
       </div>
-
+      <br>
+      <br>
     </div>
 
+  </div>
 
-    <div class="row center-align">
-      <div class="divnombretabla col s5">
-        <h3>Inscripción Ordinaria de Materias</h3>
-      </div>
-      <div class="divdescripciontabla left-align col s7">
-        <blockquote class="linea">
-          <h3>Descripción:
-          </h3>
-          <h6 class="center-align">Proceso en el que el estudiante define su horario de clase y las materias a ver en el
-            semestre, en las fechas establecidas por la universidad.
-          </h6>
-        </blockquote class="linea">
-      </div>
+
+  <div class="row center-align">
+    <div class="divnombretabla col s5">
+      <h3>Inscripción Ordinaria de Materias</h3>
     </div>
-    
-    <div class="containertable">
-      <table class="responsive-table striped centered">
-        <thead>
-          <tr>
-            <th>Nro</th>
-            <th>Procedimiento</th>
-            <th>Requisitos</th>
-            <th>Descripción</th>
-            <th>Links de Búsqueda/Ayuda</th>
-            <th>Guía Multimedia</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Inicio Sesión</td>
-            <td>Usuario y Contraseña.</td>
-            <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se debe enviar un
-              correo: mesa.ayuda@ucaldas.edu.co</td>
-            <td><a target="_blank" href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a></td>
-            <td><a target="_blank"
-                href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
-                Nuevo SIA UCaldas - YouTube</a></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Cita Inscripción Activa</td>
-            <td>Verificar si se tiene una Cita de Inscripción.</td>
-            <td>Se cuenta con una tabla que habla acerca de las Citas de Inscripción, Click en los links de ayuda.</td>
-            <td><a target="_blank" href="./CitaInscripcion.html">Tabla Cita Inscripción</a></td>
-            <td>N/A</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Click En Gestión de Clases</td>
-            <td>Haber Iniciado Sesión.</td>
-            <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
-            <td><a target="_blank"
-                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">Pagina
-                Inicial</a></td>
-            <td>N/A</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Click en Inscribir Asignatura</td>
-            <td>N/A</td>
-            <td>Se despliega una pequeña interfaz para realizar las búsquedas de las materias que se quieren inscribir.</td>
-            <td>N/A</td>
-            <td>N/A</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Click en Buscar</td>
-            <td>Se deberán buscar las asignaturas a inscribir del pensum del pregrado al que corresponde el estudiante.</td>
-            <td>Se seleccionará la Ciencia a la que pertenece la asignatura y el grado del curso del estudiante (pregrado,
-              maestría, especializaciones...)</td>
-            <td>N/A</td>
-            <td>N/A</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Seleccionar Asignatura</td>
-            <td>
-              <div class="section">
-                <p>Materias pre-requisito.</p>
-              </div>
-              <div class="section">
-                <p>Verificar Horarios Asignaturas</p>
-              </div>
-              <div class="section">
-                <p>Cantidad de Créditos a Inscribir</p>
-              </div>
-              <div class="section">
-                <p>Asignatura esté Activa</p>
-              </div>
-            </td>
-            <td>
-              <div class="section">
-                <p>Se tiene que tener en cuenta que algunas materias necesitan como requisito el haber cursado otras
-                  materias.</p>
-              </div>
-              <div class="section">
-                <p>No se podrán inscribir materias que tengan un mismo horario u horas donde se crucen con otras.</p>
-              </div>
-              <div class="section">
-                <p>Cada semestre al estudiante se le dará una cantidad de créditos totales que puede verificar cita de
-                  inscripción y cantidad de créditos. Mirar mi cita de inscripción de materias y mi cantidad de créditos. 6
-                  inscribir, sin poder sobrepasarlos.
-                </p>
-              </div>
-              <div class="section">
-                <p>Se debe revisar que la materia que se quiere inscribir, sí se vaya a dictar y que aun tenga cupos.</p>
-              </div>
-            </td>
-            <td><a target="_blank" href="./BusquedaDeMateria.html">Tabla Búsqueda de Materias</a></td>
-            <td>N/A</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Inscribir Asignatura</td>
-            <td>N/A</td>
-            <td>Luego de seleccionar una asignatura, se deberá darle al botón de siguiente hasta acabar con los 3 pasos.
-            </td>
-            <td>N/A</td>
-            <td><a target="_blank"
-                href="https://www.youtube.com/watch?v=a2jsWd3qSEk&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=3&ab_channel=U.deCaldas">Inscripción
-                de Asignatura</a></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="divdescripciontabla left-align col s7">
+      <blockquote class="linea">
+        <h3>Descripción:
+        </h3>
+        <h6 class="center-align">Proceso en el que el estudiante define su horario de clase y las materias a ver en el
+          semestre, en las fechas establecidas por la universidad.
+        </h6>
+      </blockquote class="linea">
     </div>
-    <br>
-    
-    
-    
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Contactenos</h5>
-                    <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br> yenny.1701825505@ucaldas.edu.co <br> cristian.1701814279@ucaldas.edu.co</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Redes Sociales</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/udecaldas">Twitter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina Oficial</a></li>
-                    </ul>
-                </div>
+  </div>
+
+  <div class="containertable">
+    <table class="responsive-table striped centered">
+      <thead>
+        <tr>
+          <th>Nro</th>
+          <th>Procedimiento</th>
+          <th>Requisitos</th>
+          <th>Descripción</th>
+          <th>Links de Búsqueda/Ayuda</th>
+          <th>Guía Multimedia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Inicio Sesión</td>
+          <td>Usuario y Contraseña.</td>
+          <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se debe enviar
+            un
+            correo: mesa.ayuda@ucaldas.edu.co</td>
+          <td><a target="_blank" href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a>
+          </td>
+          <td><a target="_blank"
+              href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
+              Nuevo SIA UCaldas - YouTube</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Cita Inscripción Activa</td>
+          <td>Verificar si se tiene una Cita de Inscripción.</td>
+          <td>Se cuenta con una tabla que habla acerca de las Citas de Inscripción, Click en los links de ayuda.</td>
+          <td><a target="_blank" href="./CitaInscripcion.html">Tabla Cita Inscripción</a></td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Click En Gestión de Clases</td>
+          <td>Haber Iniciado Sesión.</td>
+          <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
+          <td><a target="_blank"
+              href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">Pagina
+              Inicial</a></td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Click en Inscribir Asignatura</td>
+          <td>N/A</td>
+          <td>Se despliega una pequeña interfaz para realizar las búsquedas de las materias que se quieren inscribir.
+          </td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Click en Buscar</td>
+          <td>Se deberán buscar las asignaturas a inscribir del pensum del pregrado al que corresponde el estudiante.
+          </td>
+          <td>Se seleccionará la Ciencia a la que pertenece la asignatura y el grado del curso del estudiante (pregrado,
+            maestría, especializaciones...)</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Seleccionar Asignatura</td>
+          <td>
+            <div class="section">
+              <p>Materias pre-requisito.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2021 Copyright Text
+            <div class="section">
+              <p>Verificar Horarios Asignaturas</p>
             </div>
-        </div>
-    </footer>
+            <div class="section">
+              <p>Cantidad de Créditos a Inscribir</p>
+            </div>
+            <div class="section">
+              <p>Asignatura esté Activa</p>
+            </div>
+          </td>
+          <td>
+            <div class="section">
+              <p>Se tiene que tener en cuenta que algunas materias necesitan como requisito el haber cursado otras
+                materias.</p>
+            </div>
+            <div class="section">
+              <p>No se podrán inscribir materias que tengan un mismo horario u horas donde se crucen con otras.</p>
+            </div>
+            <div class="section">
+              <p>Cada semestre al estudiante se le dará una cantidad de créditos totales que puede verificar cita de
+                inscripción y cantidad de créditos. Mirar mi cita de inscripción de materias y mi cantidad de créditos.
+                6
+                inscribir, sin poder sobrepasarlos.
+              </p>
+            </div>
+            <div class="section">
+              <p>Se debe revisar que la materia que se quiere inscribir, sí se vaya a dictar y que aun tenga cupos.</p>
+            </div>
+          </td>
+          <td><a target="_blank" href="./BusquedaDeMateria.html">Tabla Búsqueda de Materias</a></td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Inscribir Asignatura</td>
+          <td>N/A</td>
+          <td>Luego de seleccionar una asignatura, se deberá darle al botón de siguiente hasta acabar con los 3 pasos.
+          </td>
+          <td>N/A</td>
+          <td><a target="_blank"
+              href="https://www.youtube.com/watch?v=a2jsWd3qSEk&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=3&ab_channel=U.deCaldas">Inscripción
+              de Asignatura</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="./resources/js/index.js"></script>
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contactenos</h5>
+          <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br> yenny.1701825505@ucaldas.edu.co <br>
+            cristian.1701814279@ucaldas.edu.co</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Redes Sociales</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/udecaldas">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina Oficial</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="./resources/js/index.js"></script>
 
 </body>
 
