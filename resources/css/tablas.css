@@ -3,7 +3,17 @@ blockquote {
 }
 
 table {
-    background-color:#aab0fc;
+    background-color:rgb(212, 215, 219);
+    font-family: "Helvetica Neue",sans-serif;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.24);
+}
+.main-body{
+    padding-top: 180px;
+}
+table a{
+    color:rgb(18, 69, 180);
 }
 
 .containertable{
@@ -17,8 +27,25 @@ table {
     box-shadow: 0px 0px 10px rgba(0,0,0,1);
 }
 
+.main-header{
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
 .divimglogo{
     margin-top: 4px;
+}
+
+.divnombretabla{
+    font-family: "Helvetica Neue",sans-serif;
+    margin-top: -20px;
+}
+.divdescripciontabla{
+    font-family: "Helvetica Neue",sans-serif;
+    margin-top: -20px;
+}
+.pp{
+    font-family: "Helvetica Neue",sans-serif;
 }
 
 .titulo{

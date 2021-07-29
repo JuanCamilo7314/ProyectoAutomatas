@@ -1,74 +1,159 @@
+<html>
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="../css/tablas.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="../css/tablas.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<div class="row center-align">
-    <div class="divnombretabla col s5">
-        <h3>Recibo de Pago de Matrícula</h3>
+<body>
+  <div class="row navbar">
+    <div class="divimglogo col m1">
+      <a href="http://localhost:5500/#"><img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png"
+          alt=""></a>
     </div>
-    <div class="divdescripciontabla left-align col s7">
-        <blockquote class="linea">
-            <h3>Descripción:
-            </h3>
-            <h6 class="center-align">Recibo generado por la universidad cada semestre, para constar la vinculación al mismo, además de pagos por servicios universitarios, seguro, entre otros.
-            </h6>
-        </blockquote class="linea">
+    <div class="divtitulo col m5">
+      <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
     </div>
-</div>
+    <div class="containerbusqueda col m6">
+      <div class="row divbusqueda">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">search</i>
+          <input onchange="cargarOpciones()" id="busqueda-input" type="search">
+          <label class="labelbusqueda" for="busqueda">Busqueda</label>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
 
-<div class="containertable">
-    <table class="responsive-table striped centered">
+  </div>
+
+  <ul id="opciones">
+    <li id="cargas">
+
+    </li>
+  </ul>
+
+  <div class="main-body">
+    <div class="row center-align">
+      <div class="divnombretabla col s5">
+        <h3>Recibo de Pago de Matrícula</h3>
+      </div>
+      <div class="divdescripciontabla left-align col s7">
+        <blockquote class="linea">
+          <h3>Descripción:
+          </h3>
+          <h6 class="pp center-align">Recibo generado por la universidad cada semestre, para constar la vinculación al
+            mismo, además de pagos por servicios universitarios, seguro, entre otros.
+          </h6>
+        </blockquote class="linea">
+      </div>
+    </div>
+
+    <div class="containertable">
+      <table class="responsive-table striped centered">
         <thead>
-            <tr>
-                <th>Nro</th>
-                <th>Procedimiento</th>
-                <th>Requisitos</th>
-                <th>Descripción</th>
-                <th>Links de Búsqueda/Ayuda</th>
-                <th>Guía Multimedia</th>
-            </tr>
+          <tr>
+            <th>Nro</th>
+            <th>Procedimiento</th>
+            <th>Requisitos</th>
+            <th>Descripción</th>
+            <th>Links de Búsqueda/Ayuda</th>
+            <th>Guía Multimedia</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Inicio Sesión</td>
-                <td>Usuario y Contraseña.</td>
-                <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se debe
-                    enviar un
-                    correo: mesa.ayuda@ucaldas.edu.co</td>
-                <td><a target="_blank"
-                        href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a></td>
-                <td><a target="_blank"
-                        href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
-                        Nuevo SIA UCaldas - YouTube</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Click en Cuenta Financiera</td>
-                <td>Haber Iniciado Sesión.</td>
-                <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
-                <td><a target="_blank" href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta Financiera</a></td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Seleccione Impresion de Cliente</td>
-                <td>N/A</td>
-                <td>Se cargará una tabla con los pagos pendientes.</td>
-                <td><a target="_blank" href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta Financiera</a></td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Seleccione el Recibo a Pagar</td>
-                <td>N/A</td>
-                <td>Al seleccionar el recibo a pagar, podrá imprimir o descargar el archivo, con el cual podrá pagar sus saldos.</td>
-                <td><a target="_blank" href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta Financiera</a></td>
-                <td><a target="_blank" href="https://www.youtube.com/watch?v=YVvcJ2-rrxU&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=18&ab_channel=U.deCaldas">Generar Recibo de Pago</a></td>
-            </tr>
+          <tr>
+            <td>1</td>
+            <td>Inicio Sesión</td>
+            <td>Usuario y Contraseña.</td>
+            <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se debe
+              enviar un
+              correo: mesa.ayuda@ucaldas.edu.co</td>
+            <td><a target="_blank" href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a>
+            </td>
+            <td><a target="_blank"
+                href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
+                Nuevo SIA UCaldas - YouTube</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Click en Cuenta Financiera</td>
+            <td>Haber Iniciado Sesión.</td>
+            <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
+            <td><a target="_blank"
+                href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta
+                Financiera</a></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Seleccione Impresion de Cliente</td>
+            <td>N/A</td>
+            <td>Se cargará una tabla con los pagos pendientes.</td>
+            <td><a target="_blank"
+                href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta
+                Financiera</a></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Seleccione el Recibo a Pagar</td>
+            <td>N/A</td>
+            <td>Al seleccionar el recibo a pagar, podrá imprimir o descargar el archivo, con el cual podrá pagar sus
+              saldos.</td>
+            <td><a target="_blank"
+                href="https://campus.ucaldas.edu.co/psc/cs92prod_31/EMPLOYEE/SA/c/SSF_STUDENT_FL.SSF_FIN_ACCT_MD_FL.GBL?Action=U&MD=Y&GMenu=SSF_STUDENT_FL&GComp=SSF_FIN_ACCT_SP_FL&GPage=SCC_START_PAGE_FL&scname=CS_FINANCIAL_ACCOUNT">Cuenta
+                Financiera</a></td>
+            <td><a target="_blank"
+                href="https://www.youtube.com/watch?v=YVvcJ2-rrxU&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=18&ab_channel=U.deCaldas">Generar
+                Recibo de Pago</a></td>
+          </tr>
         </tbody>
-    </table>
-</div>
-<br>
+      </table>
+    </div>
+  </div>
+  <br>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contactenos</h5>
+          <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br> yenny.1701825505@ucaldas.edu.co <br>
+            cristian.1701814279@ucaldas.edu.co</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Redes Sociales</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/udecaldas">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina Oficial</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/CargarOpciones.js"></script>
+
+</body>
+
+</html>

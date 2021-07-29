@@ -1,21 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href='../css/tablas.css' />
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="../css/tablas.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+  <div class="main-header row navbar">
+    <div class="divimglogo col m1">
+      <a href="http://localhost:5500/#"><img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt=""></a>
+    </div>
+    <div class="divtitulo col m5">
+      <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
+    </div>
+    <div class="containerbusqueda col m6">
+      <div class="row divbusqueda">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">search</i>
+          <input onchange="cargarOpciones()" id="busqueda-input" type="search">
+          <label class="labelbusqueda" for="busqueda">Busqueda</label>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+  </div>
+
+  <ul id="opciones">
+    <li id="cargas">
+
+    </li>
+  </ul>
+
+<div class="main-body">
     <div class="row center-align">
         <div class="divnombretabla col s5">
             <h3>Calificación de las Materias por mis Calificaciones</h3>
@@ -24,7 +51,7 @@
             <blockquote>
                 <h3>Descripción:
                 </h3>
-                <h6 class="center-align">
+                <h6 class="pp center-align">
                     Calificación obtenida en la materia al finalizar el semestre.
                 </h6>
             </blockquote>
@@ -53,7 +80,8 @@
                         en caso de no tenerlos, se debe enviar un correo:<b> mesa.ayuda@ucaldas.edu.co</b>
                     </td>
                     <td>
-                        <a target="_blank" href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a>
+                        <a target="_blank"
+                            href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a>
                     </td>
                     <td>
                         <a target="_blank"
@@ -67,8 +95,9 @@
                     <td> Haber Iniciado Sesión. </td>
                     <td> Despliega una lista de opciones en la barra lateral izquierda </td>
                     <td>
-                        <a target="_blank" href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">
-                            Página Inicial 
+                        <a target="_blank"
+                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">
+                            Página Inicial
                         </a>
                     </td>
                     <td>
@@ -98,12 +127,12 @@
                     <td> N/A </td>
                     <td> N/A </td>
                 </tr>
-                
+
                 <tr>
                     <td> 5 </td>
                     <td> Selecciona el Ciclo Lectivo. <b>(e)</b> </td>
                     <td> Seleccionar un ciclo lectivo dentro de los que haya cursado. </td>
-                    <td> En  la tabla de ciclos lectivos, verificar en la columna Descripción corta, 
+                    <td> En la tabla de ciclos lectivos, verificar en la columna Descripción corta,
                         el semestre que desea consultar
                     </td>
                     <td> N/A </td>
@@ -115,7 +144,7 @@
                     <td> Click en Consultar. <b>(f)</b> </td>
                     <td> N/A </td>
                     <td> Se desplegará una tabla con las materias cursadas durante este semestre y las notas
-                         finales. (Hasta el momento los semestres cursados no despliegan las notas finales)
+                        finales. (Hasta el momento los semestres cursados no despliegan las notas finales)
                     </td>
                     <td> N/A </td>
                     <td> N/A </td>
@@ -124,7 +153,41 @@
             </tbody>
         </table>
     </div>
-    <br>
+</div>
+<br>
+
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contactenos</h5>
+          <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br> yenny.1701825505@ucaldas.edu.co <br>
+            cristian.1701814279@ucaldas.edu.co</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Redes Sociales</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/udecaldas">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina Oficial</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/CargarOpciones.js"></script>
+
 </body>
 
 </html>

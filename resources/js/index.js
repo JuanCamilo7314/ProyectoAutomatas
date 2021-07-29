@@ -1,3 +1,4 @@
+"use stric"
 document.addEventListener('DOMContentLoaded', () => {
   // initialize carousel
   const carousel = document.querySelectorAll('.carousel');
@@ -5,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     shift: -2,
     indicators: true, // this option is require for autoplay functionnality
   });
-  
+
   // custom function for autoplaying 
   let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
-      slideTime = 3000,
-      activeClass = "active";
+    slideTime = 3000,
+    activeClass = "active";
 
   setInterval(() => {
     indicatorItems.forEach(el => {

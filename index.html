@@ -47,16 +47,21 @@
         <div class="row busqueda">
             <div class="input-field col s12">
                 <i class="material-icons prefix">search</i>
-                <input onchange="cargarOpciones()" id="busqueda-input" type="search">
+                <input class="busqueda-inp" onkeyup="cargarOpciones()" id="busqueda-input" type="search">
                 <label class="labelbusqueda active" for="busqueda">Busqueda</label>
             </div>
         </div>
         <br>
-        <ul id="opciones">
-            <li id="cargas">
-                
-            </li>
-        </ul>
+        <div class="contenedorOpciones">
+            <ul id="opciones">
+                <li id="cargas">
+
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
         <br>
     </div>
     <footer class="page-footer">
@@ -64,15 +69,19 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Contactenos</h5>
-                    <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br> yenny.1701825505@ucaldas.edu.co <br> cristian.1701814279@ucaldas.edu.co</p>
+                    <p class="grey-text text-lighten-4">juan.1701822418@ucaldas.edu.co <br>
+                        yenny.1701825505@ucaldas.edu.co <br> cristian.1701814279@ucaldas.edu.co</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Redes Sociales</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/udecaldas">Facebook</a>
+                        </li>
                         <li><a class="grey-text text-lighten-3" href="https://twitter.com/udecaldas">Twitter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina Oficial</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.instagram.com/udecaldas/?hl=es">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://uvirtual.ucaldas.edu.co/">Pagina
+                                Oficial</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,8 +94,10 @@
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./resources/js/Opciones.js"></script>
     <script type="text/javascript" src="./resources/js/index.js"></script>
     <script type="text/javascript" src="./resources/js/CargarOpciones.js"></script>
+    
 
 </body>
 
