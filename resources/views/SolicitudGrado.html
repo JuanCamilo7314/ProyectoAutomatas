@@ -1,167 +1,194 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="../css/tablas.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/tablas.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div class="main-header row navbar">
-        <div class="divimglogo col m1">
-            <a href="http://localhost:5500/#"><img class="imglogo"
-                    src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt=""></a>
+  <div class="main-header row navbar">
+    <div class="divimglogo col m1">
+      <a href="http://localhost:5500/#"><img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt=""></a>
+    </div>
+    <div class="divtitulo col m5">
+      <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
+    </div>
+    <div class="containerbusqueda col m6">
+      <div class="row divbusqueda">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">search</i>
+          <input onkeyup="cargarOpciones()" id="busqueda-input" type="search">
+          <label class="labelbusqueda" for="busqueda">Busqueda</label>
         </div>
-        <div class="divtitulo col m5">
-            <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
-        </div>
-        <div class="containerbusqueda col m6">
-            <div class="row divbusqueda">
-                <div class="input-field col s10">
-                    <i class="material-icons prefix">search</i>
-                    <input onchange="cargarOpciones()" id="busqueda-input" type="search">
-                    <label class="labelbusqueda" for="busqueda">Busqueda</label>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
-
+      </div>
+      <br>
+      <br>
     </div>
 
-    <ul id="opciones">
-        <li id="cargas">
+  </div>
+<div class="row">
+  <div class="col m6"></div>
+  <div class="containeriopciones col m6">
+    <div class="row divopciones">
+      <div class="col m10 contenedorOpciones">
+        <ul id="opciones">
+          <li id="cargas">
+      
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-        </li>
-    </ul>
-
-    <div class="containertable">
-        <table class="responsive-table striped centered">
-            <thead>
-                <tr>
-                    <th>Nro</th>
-                    <th>Procedimiento</th>
-                    <th>Requisitos</th>
-                    <th>Descripción</th>
-                    <th>Links de Búsqueda/Ayuda</th>
-                    <th>Guía Multimedia</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Inicio Sesión.</td>
-                    <td>Usuario y Contraseña.</td>
-                    <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se
-                        debe
-                        enviar un
-                        correo: mesa.ayuda@ucaldas.edu.co</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a></td>
-                    <td><a target="_blank"
-                            href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
-                            Nuevo SIA UCaldas - YouTube</a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Click en Progreso Academico.</td>
-                    <td>Verificar Que el programa académico esté 100% finalizado y haber iniciado sesión.</td>
-                    <td>Después de verificar de clic en inicio.</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">Página
-                            Inicial</a></td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Click en Gestion de Tramites.</td>
-                    <td>N/A.</td>
-                    <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
-                    <td><a target="_blank"
-                            href="https://www.ucaldas.edu.co/portal/guia-de-tramites-en-el-sistema-de-informacion-academico-sia/">Guía
-                            de trámites en el Sistema de Información Académico SIA</a></td>
-                    <td><a target="_blank"
-                            href="https://www.youtube.com/watch?v=v-Df4vzeX-0&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=16&ab_channel=U.deCaldas">
-                            Trámite Carné, Diploma y Grado Nuevo SIA UCaldas - YouTube</a></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Click en petición de trámites.</td>
-                    <td>N/A</td>
-                    <td>Se desplegará una lista de campos que se deben llenar.</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">
-                            Petición de Trámite</a></td>
-                    <td>Enlaces Anteriore</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Diligencie los campos de Petición de trámites.</td>
-                    <td>Institución académica, grado académico, Programa académico, ciclo lectivo, Trámite.</td>
-                    <td>N/A</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
-                            de Trámite</a></td>
-                    <td>Enlaces Anteriore</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Seleccione el trámite a realizar, haga clic en el icono.<br> <i
-                            class="material-icons">search</i> <br></td>
-                    <td>Debe solicitar 3 trámites, pago de la marcación diploma, pago carnet egresado, proceso de
-                        graduación.</td>
-                    <td>Es obligatorio realizar los tres pagos para graduarse. <br> Que el programa académico esté 100%
-                        finalizado.</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
-                            de Trámite</a></td>
-                    <td>Enlaces Anteriore</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Pestaña Detalle Solicitud.</td>
-                    <td>El estudiante debe solicitar que lo incluyan en la sesión de grado, mencionando el número de la
-                        resolución que seleccionó en el paso anterior</td>
-                    <td>N/A</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
-                            de Trámite</a></td>
-                    <td>Enlaces Anteriores</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Pestaña Anexos.</td>
-                    <td>el estudiante debe ingresar los documentos para el grado.</td>
-                    <td>Todos los documentos solicitados son obligatorios. Tales como: documento de identidad, carnet
-                        estudiantil, foto carnet Egresado, Acta de Grado, Documentos Adicionales.</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
-                            de Trámite</a></td>
-                    <td>Enlaces Anteriores</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>De clic en generar solicitud.</td>
-                    <td>Haber realizado los procesos anteriores</td>
-                    <td>El sistema genera un número de trámite con el cual el estudiante podrá consultar el estado de su
-                        solicitud. <br> Oficina de Egresados realiza la aprobación, devolución o rechazo de la
-                        solicitud.<br> Luego El Programa Académico realiza la aprobación, devolución o rechazo de la
-                        solicitud.</td>
-                    <td><a target="_blank"
-                            href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
-                            de Trámite</a></td>
-                    <td>Enlaces Anteriores</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="main-body">
+        <div class="row center-align">
+            <div class="divnombretabla col s5">
+                <h3>Solicitud de Grado</h3>
+            </div>
+            <div class="divdescripciontabla left-align col s7">
+                <blockquote class="linea">
+                    <h3>Descripción:
+                    </h3>
+                    <h6 class="pp center-align">Solicitud mediante la cual puede pedirse el grado, habiendo terminado el
+                        pensum.
+                    </h6>
+                </blockquote class="linea">
+            </div>
+        </div>
+        <div class="containertable">
+            <table class="responsive-table striped centered">
+                <thead>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Procedimiento</th>
+                        <th>Requisitos</th>
+                        <th>Descripción</th>
+                        <th>Links de Búsqueda/Ayuda</th>
+                        <th>Guía Multimedia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Inicio Sesión.</td>
+                        <td>Usuario y Contraseña.</td>
+                        <td>El usuario y la contraseña han sido asignados por la universidad; en caso de no tenerlos, se
+                            debe
+                            enviar un
+                            correo: mesa.ayuda@ucaldas.edu.co</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psp/cs92prod/EMPLOYEE/SA/?cmd=logout">Login</a></td>
+                        <td><a target="_blank"
+                                href="https://www.youtube.com/watch?v=qOqUIJ3xoGA&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=1&ab_channel=U.deCaldas">Ingreso
+                                Nuevo SIA UCaldas - YouTube</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Click en Progreso Academico.</td>
+                        <td>Verificar Que el programa académico esté 100% finalizado y haber iniciado sesión.</td>
+                        <td>Después de verificar de clic en inicio.</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">Página
+                                Inicial</a></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Click en Gestion de Tramites.</td>
+                        <td>N/A.</td>
+                        <td>Despliega una lista de opciones en la barra lateral izquierda.</td>
+                        <td><a target="_blank"
+                                href="https://www.ucaldas.edu.co/portal/guia-de-tramites-en-el-sistema-de-informacion-academico-sia/">Guía
+                                de trámites en el Sistema de Información Académico SIA</a></td>
+                        <td><a target="_blank"
+                                href="https://www.youtube.com/watch?v=v-Df4vzeX-0&list=PL-th-jwfYFFeTrE3q839hzurInhB4yblz&index=16&ab_channel=U.deCaldas">
+                                Trámite Carné, Diploma y Grado Nuevo SIA UCaldas - YouTube</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Click en petición de trámites.</td>
+                        <td>N/A</td>
+                        <td>Se desplegará una lista de campos que se deben llenar.</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">
+                                Petición de Trámite</a></td>
+                        <td>Enlaces Anteriore</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Diligencie los campos de Petición de trámites.</td>
+                        <td>Institución académica, grado académico, Programa académico, ciclo lectivo, Trámite.</td>
+                        <td>N/A</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
+                                de Trámite</a></td>
+                        <td>Enlaces Anteriore</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Seleccione el trámite a realizar, haga clic en el icono.<br> <i
+                                class="material-icons">search</i> <br></td>
+                        <td>Debe solicitar 3 trámites, pago de la marcación diploma, pago carnet egresado, proceso de
+                            graduación.</td>
+                        <td>Es obligatorio realizar los tres pagos para graduarse. <br> Que el programa académico esté
+                            100%
+                            finalizado.</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
+                                de Trámite</a></td>
+                        <td>Enlaces Anteriore</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Pestaña Detalle Solicitud.</td>
+                        <td>El estudiante debe solicitar que lo incluyan en la sesión de grado, mencionando el número de
+                            la
+                            resolución que seleccionó en el paso anterior</td>
+                        <td>N/A</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
+                                de Trámite</a></td>
+                        <td>Enlaces Anteriores</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Pestaña Anexos.</td>
+                        <td>el estudiante debe ingresar los documentos para el grado.</td>
+                        <td>Todos los documentos solicitados son obligatorios. Tales como: documento de identidad,
+                            carnet
+                            estudiantil, foto carnet Egresado, Acta de Grado, Documentos Adicionales.</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
+                                de Trámite</a></td>
+                        <td>Enlaces Anteriores</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>De clic en generar solicitud.</td>
+                        <td>Haber realizado los procesos anteriores</td>
+                        <td>El sistema genera un número de trámite con el cual el estudiante podrá consultar el estado
+                            de su
+                            solicitud. <br> Oficina de Egresados realiza la aprobación, devolución o rechazo de la
+                            solicitud.<br> Luego El Programa Académico realiza la aprobación, devolución o rechazo de la
+                            solicitud.</td>
+                        <td><a target="_blank"
+                                href="https://campus.ucaldas.edu.co/psc/cs92prod/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_GESTIN_DE_TRMITES&PanelCollapsible=Y&PTPPB_GROUPLET_ID=GESTION_TRAMITE_ALUMNO&CRefName=ADMN_NAVCOLL_9">Petición
+                                de Trámite</a></td>
+                        <td>Enlaces Anteriores</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <br>
 
@@ -199,6 +226,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../js/index.js"></script>
     <script type="text/javascript" src="../js/CargarOpciones.js"></script>
+    <script type="text/javascript" src="../js/Opciones.js"></script>
 
 </body>
 

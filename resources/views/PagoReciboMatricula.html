@@ -15,10 +15,9 @@
 </head>
 
 <body>
-  <div class="row navbar">
+  <div class="main-header row navbar">
     <div class="divimglogo col m1">
-      <a href="http://localhost:5500/#"><img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png"
-          alt=""></a>
+      <a href="http://localhost:5500/#"><img class="imglogo" src="../assets/Logo_de_la_Universidad_de_Caldas.svg.png" alt=""></a>
     </div>
     <div class="divtitulo col m5">
       <p class="titulo">TU ASISTENTE <br> SIA UCALDAS</p>
@@ -27,7 +26,7 @@
       <div class="row divbusqueda">
         <div class="input-field col s10">
           <i class="material-icons prefix">search</i>
-          <input onchange="cargarOpciones()" id="busqueda-input" type="search">
+          <input onkeyup="cargarOpciones()" id="busqueda-input" type="search">
           <label class="labelbusqueda" for="busqueda">Busqueda</label>
         </div>
       </div>
@@ -36,12 +35,20 @@
     </div>
 
   </div>
-
-  <ul id="opciones">
-    <li id="cargas">
-
-    </li>
-  </ul>
+<div class="row">
+  <div class="col m6"></div>
+  <div class="containeriopciones col m6">
+    <div class="row divopciones">
+      <div class="col m10 contenedorOpciones">
+        <ul id="opciones">
+          <li id="cargas">
+      
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="main-body">
     <div class="row center-align">
@@ -153,6 +160,7 @@
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="../js/index.js"></script>
   <script type="text/javascript" src="../js/CargarOpciones.js"></script>
+  <script type="text/javascript" src="../js/Opciones.js"></script>
 
 </body>
 

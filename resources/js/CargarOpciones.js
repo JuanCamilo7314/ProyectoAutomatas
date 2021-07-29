@@ -1,6 +1,7 @@
-var input = "";
-input = document.getElementById("busqueda-input").value;
+
 function cargarOpciones() {
+    var input = "";
+    input = document.getElementById("busqueda-input").value;
     console.log(input)
     let estadoActual = 0;
     let cadena = "";
@@ -81,7 +82,7 @@ function cargarOpciones() {
                 Aceptada = true;
                 estadoActual = 16;
                 document.getElementById("cargas").innerHTML =
-                    "<a class='btnopciones' href='/resources/views/HistorialAcademico.html'>Historial Academico</a><a class='btnopciones' href='./resources/views/ProgresoAcademico.html'>Progreso Academico</a><a class='btnopciones' href='./resources/views/DatosAcademicos.html'>Datos Academicos</a>";
+                    "<a class='btnopciones' href='/resources/views/HistorialAcademico.html'>Historial Academico</a><a class='btnopciones' href='/resources/views/ProgresoAcademico.html'>Progreso Academico</a><a class='btnopciones' href='/resources/views/DatosAcademicos.html'>Datos Academicos</a>";
             } else if (x == "s") {
                 estadoActual = 17
             } else return false;
@@ -244,7 +245,7 @@ function cargarOpciones() {
                 estadoActual = 58
                 Aceptada = true;
                 document.getElementById("cargas").innerHTML =
-                    "<a class='btnopciones' href='/resources/views/CalificacionMateriasA.html'>Calificación de las Materias por Mis Calificaciones</a><a class='btnopciones' href='./resources/views/CalificacionMateriasB.html'>Calificación de las Materias por Mi Plan Academico</a>";
+                    "<a class='btnopciones' href='/resources/views/CalificacionMateriasA.html'>Calificación de las Materias por Mis Calificaciones</a><a class='btnopciones' href='/resources/views/CalificacionMateriasB.html'>Calificación de las Materias por Mi Plan Academico</a>";
             }
             else return false;
                 break;
@@ -1013,7 +1014,7 @@ function cargarOpciones() {
                 estadoActual = 246
                 Aceptada = true;
                 document.getElementById("cargas").innerHTML =
-                    "<a class='btnopciones' href='/resources/views/HistorialAcademico.html'>Historial Académico</a> <a class='btnopciones' href='/resources/views/HistorialAcademico.html'>Progreso Académico</a>"
+                    "<a class='btnopciones' href='/resources/views/HistorialAcademico.html'>Historial Académico</a> <a class='btnopciones' href='/resources/views/ProgresoAcademico.html'>Progreso Académico</a>"
             }
 
             case 247: if (x == "a") { estadoActual = 248 }

@@ -9,9 +9,7 @@ table {
     -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.24);
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.24);
 }
-.main-body{
-    padding-top: 180px;
-}
+
 table a{
     color:rgb(18, 69, 180);
 }
@@ -30,6 +28,30 @@ table a{
 .main-header{
     width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 1;
+}
+#opciones a{
+    color: black;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#opciones a:hover{
+    background-color: rgb(216, 216, 216);
+}
+#opciones{
+    position: fixed;
+    z-index: 1;
+    -webkit-box-shadow: 6px 10px 4px -4px rgba(0,0,0,0.24);
+    -moz-box-shadow: 6px 10px 4px -4px rgba(0,0,0,0.24);
+    box-shadow: 6px 10px 4px -4px rgba(0,0,0,0.24);
+    display: block;
+    width: 25%;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    
 }
 
 .divimglogo{
@@ -58,9 +80,15 @@ table a{
 .containerbusqueda{
     margin-top: 42px;
 }
+.containeriopciones{
+    margin-top: 84px;
+}
 
 .divbusqueda{
     padding-left: 200px;
+}
+.divopciones{
+    padding-left: 240px;
 }
 .input-field
 {
@@ -87,4 +115,8 @@ table a{
 .page-footer{
     box-shadow: 0px -1px 4px rgba(0,0,0,1);
     background-color: rgb(0, 59, 111);
+}
+
+.main-body{
+    padding-top: 80px;
 }
